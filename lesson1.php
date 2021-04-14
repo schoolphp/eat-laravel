@@ -45,8 +45,8 @@ phpmyadmin:
 git init
 git remote add origin https://{login}:{password}@github.com/{login}/eat-laravel.git
 git add README.md
-git branch -M main
 git commit -m "first commit"
+git branch -M main
 git push -u origin main
 
 
