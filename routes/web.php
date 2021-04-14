@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/main', [MainController::class, 'main']);
-Route::get('/second/{x}/{y}', [MainController::class, 'second']);
+Route::get('/second/{id}', [MainController::class, 'second']);

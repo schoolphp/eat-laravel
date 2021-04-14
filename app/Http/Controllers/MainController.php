@@ -21,13 +21,11 @@ class MainController extends Controller
         return view('main', ['product' => $text]);
     }
 
-    public function second($x, $y): View
+    public function second($id): View
     {
-        $category = EatItems::query()->where('id', 1)->first();
-        dd($category);
-        echo $x . '<br>' . $y . '<br>';
+        $category = EatItems::query()->where('id', $id)->first();
+        dump($category);
         $text = 'text text text';
         return view('second', ['product' => $text]);
     }
-
 }
